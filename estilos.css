@@ -1,72 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     background-color: darkslategrey;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 h1 {
+    font-size: 30px;
     text-transform: uppercase;
+    margin-top: 50px;
+    text-shadow: burlywood 1px 1px 2px;
 }
 
 p {
-    text-transform: capitalize;
+    font-size: small;
+    text-shadow: rgb(177, 148, 110) 1px 1px 2px;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 25px;
 }
 
 img {
     width: 100%;
-    cursor: pointer;
 }
 
 .calculadora {
-    margin: 20% auto;
-    width: 80%;
-    background-color: rgba(0, 0, 0, 0.144);
-    color: darkseagreen;
+    background-color: rgb(62, 102, 102);
+    width: 50vw;
+    height: 60vh;
+    margin: 0 auto;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    padding: 20px;
-    border: darkolivegreen solid 1px;
-    border-radius: 10%;
-    box-shadow: rgb(85, 94, 85) 1px 1px 2px, rgb(90, 95, 90) 2px 2px 4px, rgb(45, 51, 45) 2px 2px 4px, rgb(63, 83, 63) 3px 3px 5px, rgb(63, 83, 63) 6px 6px 7px;
+    border-radius: 10px;
+    box-shadow: rgb(48, 40, 31) 1px 1px 2px, rgb(53, 44, 35) 1px 1px 3px, rgb(87, 73, 56) 2px 2px 4px, rgb(87, 73, 56) 3px 3px 4px, rgb(36, 30, 23) 3px 3px 4px;
 }
 
 .display {
-    width: 70%;
+    background-color: aliceblue;
+    width: 65%;
     margin: 10px auto;
-    padding: 15px;
-    align-items: center;
-    justify-content: center;
-    border: darkseagreen double 2px;
-}
-
-input {
-    width: 90%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    border: burlywood 1px solid;
+    box-shadow: rgb(65, 55, 42) 1px 1px 2px, rgb(87, 73, 56) 1px 1px 3px;
 }
 
 .monitor {
-    background-color: cornsilk;
-    font-size: 50px;
-    color: rgb(15, 15, 19);
-    margin-bottom: 10px;
-    overflow-x: scroll;
+    background-color: rgb(224, 215, 203);
+    padding: 10px;
+    width: 100%;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .operaciones {
+    margin-top: 50px;
     display: flex;
-    justify-content: space-around;
 }
 
 .bt {
     width: 20%;
-    margin-top: 20px;
-    font-weight: bolder;
-    background-color: darkolivegreen;
-    color: darkseagreen;
-    border-radius: 5px;
-    cursor: pointer;
+    margin: 10px auto;
+    background-color: rgb(58, 95, 95);
+    border: darkslategrey 2px solid;
+    border-radius: 10px;
+    box-shadow: cadetblue 1px 1px 2px;
 }
 
 footer {
-    position: fixed;
-    bottom: 20px;
-    left: 15%;
-    color: darkkhaki;
-    font-size: 22px;
+    margin-top: 10rem;
+    text-align: center;
+    color: burlywood;
+}
+
+@media screen and (max-width:450px) {
+    .calculadora {
+        width: 65vw;
+    }
 }
