@@ -1,0 +1,72 @@
+html {
+    background-color: darkslategrey;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+p {
+    text-transform: capitalize;
+}
+
+img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.calculadora {
+    margin: 20% auto;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.144);
+    color: darkseagreen;
+    text-align: center;
+    padding: 20px;
+    border: darkolivegreen solid 1px;
+    border-radius: 10%;
+    box-shadow: rgb(85, 94, 85) 1px 1px 2px, rgb(90, 95, 90) 2px 2px 4px, rgb(45, 51, 45) 2px 2px 4px, rgb(63, 83, 63) 3px 3px 5px, rgb(63, 83, 63) 6px 6px 7px;
+}
+
+.display {
+    width: 70%;
+    margin: 10px auto;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    border: darkseagreen double 2px;
+}
+
+input {
+    width: 90%;
+}
+
+.monitor {
+    background-color: cornsilk;
+    font-size: 50px;
+    color: rgb(15, 15, 19);
+    margin-bottom: 10px;
+    overflow-x: scroll;
+}
+
+.operaciones {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bt {
+    width: 20%;
+    margin-top: 20px;
+    font-weight: bolder;
+    background-color: darkolivegreen;
+    color: darkseagreen;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    position: fixed;
+    bottom: 20px;
+    left: 15%;
+    color: darkkhaki;
+    font-size: 22px;
+}
