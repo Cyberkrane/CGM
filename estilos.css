@@ -5,27 +5,28 @@
 }
 
 html {
-    background-color: darkslategrey;
+    background-color: rgb(61, 95, 95);
     font-family: 'Courier New', Courier, monospace;
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 3rem;
     text-transform: uppercase;
     margin-top: 50px;
-    text-shadow: burlywood 1px 1px 2px;
+    text-shadow: rgb(153, 136, 115) 1px 1px 2px;
 }
 
 p {
-    font-size: small;
+    font-size: medium;
     text-shadow: rgb(177, 148, 110) 1px 1px 2px;
     margin-bottom: 20px;
 }
 
 input {
-    width: 100%;
+    width: 40%;
     padding: 10px;
     font-size: 25px;
+
 }
 
 img {
@@ -33,46 +34,58 @@ img {
 }
 
 .calculadora {
-    background-color: rgb(62, 102, 102);
+    background-color: rgb(47, 78, 78);
+    color: aliceblue;
     width: 50vw;
     height: 60vh;
     margin: 0 auto;
     margin-top: 150px;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    justify-content: space-around;
+    align-items: center;
     border-radius: 10px;
-    box-shadow: rgb(48, 40, 31) 1px 1px 2px, rgb(53, 44, 35) 1px 1px 3px, rgb(87, 73, 56) 2px 2px 4px, rgb(87, 73, 56) 3px 3px 4px, rgb(36, 30, 23) 3px 3px 4px;
+    box-shadow: inset rgb(48, 40, 31) 0px 0px 12px,rgb(48, 40, 31) 1px 1px 2px, rgb(53, 44, 35) 1px 1px 3px, rgb(87, 73, 56) 2px 2px 4px, rgb(87, 73, 56) 3px 3px 4px, rgb(36, 30, 23) 3px 3px 4px;
 }
 
 .display {
-    background-color: aliceblue;
-    width: 65%;
+    width: 50%;
     margin: 10px auto;
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     overflow-x: hidden;
-    border: burlywood 1px solid;
-    box-shadow: rgb(65, 55, 42) 1px 1px 2px, rgb(87, 73, 56) 1px 1px 3px;
 }
-
+.borde_monitor{
+    background-color: rgba(4, 33, 33, 0.388);
+    width: 50%;
+    padding: 2px;
+    border:rgba(26, 28, 28, 0.388) 2px solid;
+    border-radius: 10px;
+    box-shadow: rgb(103, 105, 106) 0 0 3px;
+}
 .monitor {
-    background-color: rgb(224, 215, 203);
+    background-color: rgba(202, 213, 213, 0.388);
+    color: rgb(20, 23, 25);
     padding: 10px;
-    width: 100%;
+    text-align: right;
+    border-radius: 10px;
     font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: inset rgb(0, 4, 8) 1px 1px 5px, rgb(0, 4, 8) 0 0 2px;
 }
 
 .operaciones {
+    width: 50%;
     margin-top: 50px;
     display: flex;
+    justify-content: space-around;
 }
 
 .bt {
     width: 20%;
     margin: 10px auto;
-    background-color: rgb(58, 95, 95);
+    padding: 10px;
+    background-color: rgb(77, 127, 127);
     border: darkslategrey 2px solid;
     border-radius: 10px;
     box-shadow: cadetblue 1px 1px 2px;

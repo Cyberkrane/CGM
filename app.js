@@ -1,43 +1,30 @@
 const lista = document.querySelector('.operaciones');
 const visor = document.querySelector('.monitor');
+const primerInput = document.querySelector('#primero');
+const segundoInput = document.querySelector('#segundo');
 
 lista.addEventListener('click', (e) => {
+    const valor1 = parseInt(primerInput.value);
+    const valor2 = parseInt(segundoInput.value);
 
-    let valor1 = parseInt(document.querySelector('#primero').value);
-    let valor2 = parseInt(document.querySelector('#segundo').value);
+    if (e.target.tagName === 'IMG') {
+        const nombreDeLaOperacion = e.target.id;
 
-    if (e.target && e.target.tagName === 'IMG') {
-        if (e.target.id == 'sumar') {
-            visor.innerHTML = valor1 + valor2;
-            // console.log();
-        }
-        if (e.target.id == 'restar') {
-            visor.innerHTML = valor1 - valor2;
-            // console.log(valor1 - valor2);
-        }
-        if (e.target.id == 'multiplicar') {
-            visor.innerHTML = valor1 * valor2;
-            // console.log(valor1 * valor2);
-        }
-        if (e.target.id == 'dividir') {
-            visor.innerHTML = valor1 / valor2;
-            // console.log(valor1 / valor2);
+        switch (nombreDeLaOperacion) {
+            case 'sumar':
+                visor.innerHTML = valor1 + valor2;
+                break;
+            case 'restar':
+                visor.innerHTML = valor1 - valor2;
+                break;
+            case 'multiplicar':
+                visor.innerHTML = valor1 * valor2;
+                break;
+            case 'dividir':
+                visor.innerHTML = valor1 / valor2;
+                break;
+            default:
+                break;
         }
     }
-})
-
-function sumar(a, b) {
-    console.log(a + b);
-}
-
-function restar(a, b) {
-    console.log(a - b);
-}
-
-function multiplicar(a, b) {
-    console.log(a * b);
-}
-
-function dividir(a, b) {
-    console.log(a / b);
-}
+});
